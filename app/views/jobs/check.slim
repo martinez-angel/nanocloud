@@ -1,7 +1,0 @@
-= Time.now
-#state
-  | Status:
-  = @success ? 'Ok' : 'Running'
-#dump
-  - if @job
-    = @job.last_error

@@ -9,7 +9,7 @@ html
     - if sheet = Rails.application.assets.find_asset("#{params[:controller].downcase}.css")
       = stylesheet_link_tag sheet
 
-  body id="#{params[:controller].downcase.gsub('/','-')}" class="#{params[:action].downcase}" *@js_data
+  body id=params[:controller].downcase.gsub('/','-') class=params[:action].downcase
     #header
       h1
         'NANOCLOUD
